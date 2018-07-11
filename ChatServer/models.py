@@ -13,7 +13,7 @@ class AppUser(models.Model):
     )
     Password = models.CharField(max_length=256)
     Email = models.EmailField(blank=True)
-    Active = models.CharField(max_length=4, default='No')
+    # Active = models.CharField(max_length=4, default='No')
 
     def __str__(self):
         return self.UserName
@@ -45,7 +45,7 @@ class UserProfile(models.Model):
     NickName = models.CharField(max_length=32)
     Birthday = models.CharField(max_length=24)
     Friends = models.ManyToManyField("self", related_name="myFriends")
-    Avatar = models.IntegerField(max_length=2, default=1)
+    Avatar = models.IntegerField(default=1)
 
     def __str__(self):
         return self.NickName

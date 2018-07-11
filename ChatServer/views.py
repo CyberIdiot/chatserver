@@ -24,7 +24,7 @@ def user_login(request):
             username = json_request['name']
             password = json_request['password']
             user = AppUser.objects.get(UserName=username)
-            if user is not None or user.Active != 'No':
+            if user is None: #or user.Active != 'No':
                 return 404
                 # some one had logged in this account
             if user.Password == password:
@@ -71,7 +71,7 @@ def friend_list_request(request):
         if request_type == '2':
             username = json_request['name']
             user = AppUser.objects.get(UserName=username)
-            if user is None or user.Active != 'Yes':
+            if user is None: # or user.Active != 'Yes':
                 return 404
             user_profile = user.userprofile
             friend_list = user_profile.Friends
@@ -121,7 +121,7 @@ def profile_update(request):
         if request_type == '4':
             username = json_request['name']
             user = AppUser.objects.get(UserName=username)
-            if user is None or user.Active == 'No':
+            if user is None: # or user.Active == 'No':
                 return 404
             user_profile = user.userprofile
             if user_profile is None:
@@ -149,7 +149,7 @@ def send_message(request):
         if request_type == '5':
             username_from = json_request['name_s']
             user_from = AppUser.objects.get(UserName=username_from)
-            if user_from is None or user_from.Active != 'Yes':
+            if user_from is None: # or user_from.Active != 'Yes':
                 return 404
             username_to = json_request['name_r']
             user_to = AppUser.objects.get(UserName=username_to)
@@ -180,7 +180,7 @@ def friend_add(request):
         if request_type == '6':
             username_from = json_request['name_s']
             user_from = AppUser.objects.get(UserName=username_from)
-            if user_from is None or user_from.Active != 'Yes':
+            if user_from is None: # or user_from.Active != 'Yes':
                 return 404
             username_to = json_request['name_r']
             user_to = AppUser.objects.get(UserName=username_to)
@@ -236,7 +236,7 @@ def friend_del(request):
         if request_type == '7':
             username_from = json_request['name_s']
             user_from = AppUser.objects.get(UserName=username_from)
-            if user_from is None or user_from.Active != 'Yes':
+            if user_from is None: # or user_from.Active != 'Yes':
                 return 404
             username_to = json_request['name_r']
             user_to = AppUser.objects.get(UserName=username_to)
