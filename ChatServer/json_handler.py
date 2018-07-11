@@ -1,5 +1,5 @@
 from django.http import HttpRequest, HttpResponse
-from ChatServer.views import user_login, user_signup, friend_list_request, profile_request, profile_update, send_message, friend_add
+from ChatServer.views import user_login, user_signup, friend_list_request, profile_request, profile_update, send_message, friend_add, user_logout, friend_del
 import json
 
 # deal with requests from our app
@@ -26,11 +26,17 @@ def json_handler(request):
             json_response = send_message(request)
         elif request_type == '6':
             json_response = friend_add(request)
+        elif request_type == 'user_logout':
+            json_response = user_logout(request)
+        elif request_type == '7' or request_type == "add_delete":
+            json_response = friend_del(request)
         if json_response == 404:
             return HttpResponse(content=b'', status=404, )
         elif json_response == 200:
             return HttpResponse(content=b'', status=200, )
         else:
-            return HttpResponse(content=json.dumps(json_response), status=200, content_type="application/json")
+            return HttpResponse(content=json.dumps(json_response, ensure_ascii=False),
+                                status=200,
+                                content_type="application/json")
     else:
         return HttpResponse(content=b'', status=404, )

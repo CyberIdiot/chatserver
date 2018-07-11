@@ -13,30 +13,31 @@ class AppUser(models.Model):
     )
     Password = models.CharField(max_length=256)
     Email = models.EmailField(blank=True)
+    Active = models.CharField(max_length=4, default='No')
 
     def __str__(self):
         return self.UserName
 
-    @staticmethod
-    def user_login(username, password):
-        try:
-            log_user = AppUser.objects.filter(UserName=username)
-            if log_user.Password == password:
-                return log_user
-            else:
-                return None
-        except AppUser.DoesNotExist:
-            return None
+#    @staticmethod
+#    def user_login(username, password):
+#        try:
+#            log_user = AppUser.objects.filter(UserName=username)
+#            if log_user.Password == password:
+#                return log_user
+#            else:
+#                return None
+#        except AppUser.DoesNotExist:
+#            return None
 
-    @staticmethod
-    def user_create(username, password, email):
-        try:
-            user = AppUser.objects.filter(UserName=username)
-            return user
-        except AppUser.DoesNotExist:
-            new_user = AppUser(UserName=username, Password=password, Email=email)
-            new_user.save()
-            return new_user
+#    @staticmethod
+#    def user_create(username, password, email):
+#        try:
+#            user = AppUser.objects.filter(UserName=username)
+#            return user
+#        except AppUser.DoesNotExist:
+#            new_user = AppUser(UserName=username, Password=password, Email=email)
+#            new_user.save()
+#            return new_user
 
 
 class UserProfile(models.Model):
@@ -44,6 +45,7 @@ class UserProfile(models.Model):
     NickName = models.CharField(max_length=32)
     Birthday = models.CharField(max_length=24)
     Friends = models.ManyToManyField("self", related_name="myFriends")
+    Avatar = models.IntegerField(max_length=2, default=1)
 
     def __str__(self):
         return self.NickName
