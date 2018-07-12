@@ -23,8 +23,8 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ChatServer/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="452">
-              <caret line="69" selection-start-line="69" selection-end-line="69" />
+            <state relative-caret-position="285">
+              <caret line="47" column="40" selection-start-line="47" selection-start-column="40" selection-end-line="47" selection-end-column="40" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -35,8 +35,8 @@
       <file leaf-file-name="json_handler.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ChatServer/json_handler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="41" column="54" lean-forward="true" selection-start-line="41" selection-start-column="54" selection-end-line="41" selection-end-column="54" />
+            <state relative-caret-position="779">
+              <caret line="41" column="54" selection-start-line="41" selection-start-column="54" selection-end-line="41" selection-end-column="54" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
               </folding>
@@ -44,11 +44,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DjangoServer/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="437">
-              <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+              <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
               <folding>
                 <element signature="e#636#668#0" expanded="true" />
               </folding>
@@ -59,24 +59,20 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ChatServer/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="286" column="39" selection-start-line="286" selection-start-column="39" selection-end-line="286" selection-end-column="39" />
+            <state relative-caret-position="1387">
+              <caret line="113" column="118" selection-start-line="113" selection-start-column="118" selection-end-line="113" selection-end-column="118" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
-                <element signature="e#7107#8617#0" />
-                <element signature="e#8650#9152#0" />
-                <element signature="e#9184#10812#0" />
-                <element signature="e#10962#10968#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mulit_handler.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="mulit_handler.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ChatServer/mulit_handler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-384">
-              <caret line="33" column="71" selection-start-line="33" selection-start-column="71" selection-end-line="33" selection-end-column="71" />
+            <state relative-caret-position="532">
+              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -112,9 +108,9 @@
         <option value="$PROJECT_DIR$/ChatServer/jpush_init.py" />
         <option value="$PROJECT_DIR$/DjangoServer/settings.py" />
         <option value="$PROJECT_DIR$/ChatServer/json_handler.py" />
+        <option value="$PROJECT_DIR$/ChatServer/mulit_handler.py" />
         <option value="$PROJECT_DIR$/DjangoServer/urls.py" />
         <option value="$PROJECT_DIR$/ChatServer/views.py" />
-        <option value="$PROJECT_DIR$/ChatServer/mulit_handler.py" />
         <option value="$PROJECT_DIR$/ChatServer/models.py" />
       </list>
     </option>
@@ -130,7 +126,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -152,6 +147,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -217,14 +213,14 @@
     <frame x="953" y="40" width="974" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2553419" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2553419" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32896176" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32896176" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32896176" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32896176" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -245,6 +241,63 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/DjangoServer/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="27" column="44" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChatServer/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="874">
+          <caret line="47" column="33" selection-start-line="47" selection-start-column="33" selection-end-line="47" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChatServer/json_handler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="741">
+          <caret line="41" column="54" lean-forward="true" selection-start-line="41" selection-start-column="54" selection-end-line="41" selection-end-column="54" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DjangoServer/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+          <folding>
+            <element signature="e#636#668#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChatServer/mulit_handler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="33" column="71" selection-start-line="33" selection-start-column="71" selection-end-line="33" selection-end-column="71" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChatServer/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5301">
+          <caret line="286" column="37" selection-start-line="286" selection-start-column="37" selection-end-line="286" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/DjangoServer/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="513">
@@ -278,10 +331,6 @@
           <caret line="258" column="25" selection-start-line="258" selection-start-column="25" selection-end-line="258" selection-end-column="25" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
-            <element signature="e#7107#8617#0" />
-            <element signature="e#8650#9152#0" />
-            <element signature="e#9184#10812#0" />
-            <element signature="e#10962#10968#0" />
           </folding>
         </state>
       </provider>
@@ -339,10 +388,6 @@
           <caret line="213" lean-forward="true" selection-start-line="213" selection-end-line="213" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
-            <element signature="e#7107#8617#0" />
-            <element signature="e#8650#9152#0" />
-            <element signature="e#9184#10812#0" />
-            <element signature="e#10962#10968#0" />
           </folding>
         </state>
       </provider>
@@ -370,10 +415,6 @@
           <caret line="128" column="36" lean-forward="true" selection-start-line="128" selection-start-column="36" selection-end-line="128" selection-end-column="36" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
-            <element signature="e#7107#8617#0" />
-            <element signature="e#8650#9152#0" />
-            <element signature="e#9184#10812#0" />
-            <element signature="e#10962#10968#0" />
           </folding>
         </state>
       </provider>
@@ -441,10 +482,6 @@
           <caret line="102" column="14" selection-start-line="102" selection-start-column="14" selection-end-line="102" selection-end-column="14" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
-            <element signature="e#7107#8617#0" />
-            <element signature="e#8650#9152#0" />
-            <element signature="e#9184#10812#0" />
-            <element signature="e#10962#10968#0" />
           </folding>
         </state>
       </provider>
@@ -482,10 +519,6 @@
           <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
-            <element signature="e#7107#8617#0" />
-            <element signature="e#8650#9152#0" />
-            <element signature="e#9184#10812#0" />
-            <element signature="e#10962#10968#0" />
           </folding>
         </state>
       </provider>
@@ -523,10 +556,6 @@
           <caret line="159" lean-forward="true" selection-start-line="159" selection-end-line="159" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
-            <element signature="e#7107#8617#0" />
-            <element signature="e#8650#9152#0" />
-            <element signature="e#9184#10812#0" />
-            <element signature="e#10962#10968#0" />
           </folding>
         </state>
       </provider>
@@ -561,10 +590,6 @@
           <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
-            <element signature="e#7107#8617#0" />
-            <element signature="e#8650#9152#0" />
-            <element signature="e#9184#10812#0" />
-            <element signature="e#10962#10968#0" />
           </folding>
         </state>
       </provider>
@@ -594,46 +619,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ChatServer/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="69" selection-start-line="69" selection-end-line="69" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ChatServer/json_handler.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="41" column="54" lean-forward="true" selection-start-line="41" selection-start-column="54" selection-end-line="41" selection-end-column="54" />
+        <state relative-caret-position="779">
+          <caret line="41" column="54" selection-start-line="41" selection-start-column="54" selection-end-line="41" selection-end-column="54" />
           <folding>
             <element signature="e#0#49#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ChatServer/mulit_handler.py">
+    <entry file="file://$PROJECT_DIR$/ChatServer/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-384">
-          <caret line="33" column="71" selection-start-line="33" selection-start-column="71" selection-end-line="33" selection-end-column="71" />
+        <state relative-caret-position="285">
+          <caret line="47" column="40" selection-start-line="47" selection-start-column="40" selection-end-line="47" selection-end-column="40" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChatServer/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="286" column="39" selection-start-line="286" selection-start-column="39" selection-end-line="286" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-            <element signature="e#7107#8617#0" />
-            <element signature="e#8650#9152#0" />
-            <element signature="e#9184#10812#0" />
-            <element signature="e#10962#10968#0" />
+            <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -641,9 +642,29 @@
     <entry file="file://$PROJECT_DIR$/DjangoServer/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
-          <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+          <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
           <folding>
             <element signature="e#636#668#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChatServer/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1387">
+          <caret line="113" column="118" selection-start-line="113" selection-start-column="118" selection-end-line="113" selection-end-column="118" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChatServer/mulit_handler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>

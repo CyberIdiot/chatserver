@@ -9,7 +9,6 @@ import jpush
 
 # Jpush setting
 
-
 _jpush = jpush.JPush("05b80105b6611b3e650ea234", "5e904c7030772f14a31fd382")
 _jpush.set_logging("DEBUG")
 
@@ -24,7 +23,7 @@ def user_login(request):
             username = json_request['name']
             password = json_request['password']
             user = AppUser.objects.get(UserName=username)
-            if user is None: #or user.Active != 'No':
+            if user is not None or user.Active != 'No':
                 return 404
                 # some one had logged in this account
             if user.Password == password:
@@ -47,6 +46,7 @@ def user_signup(request):
             nickname = json_request['nickname']
             email = json_request['email']
             birthday = json_request['birthday']
+            avatar = json_request['avatar']
             # try:
            # user = AppUser.objects.filter(UserName=username)
                # user_profile = UserProfile.objects.filter(LinkUser=user)
@@ -56,7 +56,7 @@ def user_signup(request):
            # if user is None:
             user = AppUser(UserName=username, Password=password, Email=email)
             user.save()
-            user_profile = UserProfile(LinkUser=user, NickName=nickname, Birthday=birthday)
+            user_profile = UserProfile(LinkUser=user, NickName=nickname, Birthday=birthday, Avatar=avatar)
             user_profile.save()
             json_response = {"type": "1", "name": username}
             print(json_response)
@@ -71,7 +71,7 @@ def friend_list_request(request):
         if request_type == '2':
             username = json_request['name']
             user = AppUser.objects.get(UserName=username)
-            if user is None: # or user.Active != 'Yes':
+            if user is None or user.Active != 'Yes':
                 return 404
             user_profile = user.userprofile
             friend_list = user_profile.Friends
@@ -108,8 +108,9 @@ def profile_request(request):
             nickname = user_profile.NickName
             email = user.Email
             birthday = user_profile.Birthday
+            avatar = user_profile.Avatar
             # birthday = str(birthday)
-            json_response = {"type": "3", "nickname": nickname, "email": email, "birthday": birthday}
+            json_response = {"type": "3", "nickname": nickname, "email": email, "birthday": birthday, "avatar": avatar}
             return json_response
     return 404
 
@@ -121,7 +122,7 @@ def profile_update(request):
         if request_type == '4':
             username = json_request['name']
             user = AppUser.objects.get(UserName=username)
-            if user is None: # or user.Active == 'No':
+            if user is None or user.Active == 'No':
                 return 404
             user_profile = user.userprofile
             if user_profile is None:
@@ -130,7 +131,9 @@ def profile_update(request):
             nickname = json_request['nickname']
             email = json_request['email']
             birthday = json_request['birthday']
+            avatar = json_request['avatar']
             user_profile.NickName = nickname
+            user_profile.Avatar = avatar
             user_profile.save()
             user.Password = password
             user.Email = email
@@ -149,7 +152,7 @@ def send_message(request):
         if request_type == '5':
             username_from = json_request['name_s']
             user_from = AppUser.objects.get(UserName=username_from)
-            if user_from is None: # or user_from.Active != 'Yes':
+            if user_from is None or user_from.Active != 'Yes':
                 return 404
             username_to = json_request['name_r']
             user_to = AppUser.objects.get(UserName=username_to)
@@ -180,7 +183,7 @@ def friend_add(request):
         if request_type == '6':
             username_from = json_request['name_s']
             user_from = AppUser.objects.get(UserName=username_from)
-            if user_from is None: # or user_from.Active != 'Yes':
+            if user_from is None or user_from.Active != 'Yes':
                 return 404
             username_to = json_request['name_r']
             user_to = AppUser.objects.get(UserName=username_to)
@@ -236,7 +239,7 @@ def friend_del(request):
         if request_type == '7':
             username_from = json_request['name_s']
             user_from = AppUser.objects.get(UserName=username_from)
-            if user_from is None: # or user_from.Active != 'Yes':
+            if user_from is None or user_from.Active != 'Yes':
                 return 404
             username_to = json_request['name_r']
             user_to = AppUser.objects.get(UserName=username_to)
@@ -273,9 +276,9 @@ def friend_del(request):
     return 404
 
 
-def image_response(request, file_path):
+def image_response(request, file_name):
     if request.method == 'POST':
-        file_object = open("./image/"+file_path, "rb+")
+        file_object = open("./image/" + file_name, "rb+")
         # json_response = {"type":"img", "contain": file_object.read()}
         # return json_response
         return HttpResponse(content=file_object.read(),
@@ -284,10 +287,9 @@ def image_response(request, file_path):
     return HttpResponse(content=b'', status=404, )
 
 
-def voice_response(request, file_path):
+def voice_response(request, file_name):
     if request.method == 'POST':
-        print("\n"+"./voice/"+file_path+"\n")
-        file_object = open("./voice/"+file_path, "rb+")
+        file_object = open("./voice/" + file_name, "rb+")
         # json_response = {"type":"sou", "contain": file_object.read()}
         # return json_response
         return HttpResponse(content=file_object.read(),

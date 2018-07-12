@@ -7,11 +7,11 @@ import json
 
 def json_handler(request):
     if request.method == 'POST':
-        print(request.body)
+       # print(request.body)
         json_request = json.loads(request.body.decode())
-        print(json_request)
+       # print(json_request)
         request_type = json_request['type']
-        print(type(request_type))
+       # print(type(request_type))
         if request_type == '0':
             json_response = user_login(request)
         elif request_type == '1':
