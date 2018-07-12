@@ -24,7 +24,7 @@ def message_handler(json_request):
                                  extras={"type": request_type, "name_s": username_from, "name_r": username_to})
     push.message = jpush.message(message, title=username_from,
                                  extras={"type": request_type, "name_s": username_from, "name_r": username_to})
-    push.platform = 'andorid'
+    push.platform = 'android'
     payload = push.send()
 
 
