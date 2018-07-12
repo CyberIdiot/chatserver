@@ -9,6 +9,7 @@ import jpush
 
 # Jpush setting
 
+
 _jpush = jpush.JPush("05b80105b6611b3e650ea234", "5e904c7030772f14a31fd382")
 _jpush.set_logging("DEBUG")
 
@@ -23,11 +24,11 @@ def user_login(request):
             username = json_request['name']
             password = json_request['password']
             user = AppUser.objects.get(UserName=username)
-            if user is not None or user.Active != 'No':
+            if user is None: # or user.Active != 'No':
                 return 404
                 # some one had logged in this account
             if user.Password == password:
-                user.Active = 'Yes'
+                #user.Active = 'Yes'
                 user.save()
                 json_response = {"type": "0", "name": username}
                 return json_response
@@ -71,7 +72,7 @@ def friend_list_request(request):
         if request_type == '2':
             username = json_request['name']
             user = AppUser.objects.get(UserName=username)
-            if user is None or user.Active != 'Yes':
+            if user is None: # or user.Active != 'Yes':
                 return 404
             user_profile = user.userprofile
             friend_list = user_profile.Friends
@@ -122,7 +123,7 @@ def profile_update(request):
         if request_type == '4':
             username = json_request['name']
             user = AppUser.objects.get(UserName=username)
-            if user is None or user.Active == 'No':
+            if user is None: # or user.Active == 'No':
                 return 404
             user_profile = user.userprofile
             if user_profile is None:
@@ -152,7 +153,7 @@ def send_message(request):
         if request_type == '5':
             username_from = json_request['name_s']
             user_from = AppUser.objects.get(UserName=username_from)
-            if user_from is None or user_from.Active != 'Yes':
+            if user_from is None: # or user_from.Active != 'Yes':
                 return 404
             username_to = json_request['name_r']
             user_to = AppUser.objects.get(UserName=username_to)
@@ -183,7 +184,7 @@ def friend_add(request):
         if request_type == '6':
             username_from = json_request['name_s']
             user_from = AppUser.objects.get(UserName=username_from)
-            if user_from is None or user_from.Active != 'Yes':
+            if user_from is None: # or user_from.Active != 'Yes':
                 return 404
             username_to = json_request['name_r']
             user_to = AppUser.objects.get(UserName=username_to)
@@ -224,9 +225,9 @@ def user_logout(request):
         if request_type == 'user_logout':
             username = json_request['name']
             user = AppUser.objects.get(UserName=username)
-            if user is None or user.Active != 'Yes':
+            if user is None: # or user.Active != 'Yes':
                 return 404
-            user.Active = 'No'
+            # user.Active = 'No'
             json_response = {"type": "user_logout", "name": username}
             return json_response
     return 404
@@ -239,7 +240,7 @@ def friend_del(request):
         if request_type == '7':
             username_from = json_request['name_s']
             user_from = AppUser.objects.get(UserName=username_from)
-            if user_from is None or user_from.Active != 'Yes':
+            if user_from is None:# or user_from.Active != 'Yes':
                 return 404
             username_to = json_request['name_r']
             user_to = AppUser.objects.get(UserName=username_to)
