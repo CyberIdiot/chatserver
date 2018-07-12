@@ -20,10 +20,11 @@ def message_handler(json_request):
         alias
     )
     # push.options = {"time_to_live":86400}
-    push.notification = jpush.notification(alert=username_from)
+    push.notification = jpush.notification(alert=message,title=username_from,
+                                 extras={"type": request_type, "name_s": username_from, "name_r": username_to})
     push.message = jpush.message(message, title=username_from,
                                  extras={"type": request_type, "name_s": username_from, "name_r": username_to})
-    push.platform = jpush.all_
+    push.platform = 'andorid'
     payload = push.send()
 
 
