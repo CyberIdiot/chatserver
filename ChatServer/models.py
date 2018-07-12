@@ -45,7 +45,7 @@ class UserProfile(models.Model):
     NickName = models.CharField(max_length=32)
     Birthday = models.CharField(max_length=24)
     Friends = models.ManyToManyField("self", related_name="myFriends")
-    Avatar = models.CharField(default="1")
+    Avatar = models.CharField(max_length=8, default="1")
 
     def __str__(self):
         return self.NickName
