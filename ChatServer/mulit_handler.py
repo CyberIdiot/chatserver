@@ -3,7 +3,7 @@ import jpush
 
 
 # jpush setting
-_jpush = jpush.JPush("73232d2b0ba48e696ed64e10", "2bd2574d84ef4986d7ba1c44")
+_jpush = jpush.JPush("05b80105b6611b3e650ea234", "5e904c7030772f14a31fd382")
 _jpush.set_logging("DEBUG")
 
 
