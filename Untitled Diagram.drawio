@@ -1,11 +1,11 @@
-<mxfile host="app.diagrams.net" modified="2020-10-12T06:39:37.909Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36" etag="Fhh-xIvnJfwpfUZ8pJY0" version="13.7.9" type="github">
+<mxfile host="app.diagrams.net" modified="2020-10-12T06:44:42.794Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36" etag="Yp33U2s9Lm7-rwM7bBjX" version="13.7.9" type="github">
   <diagram id="gZnFTPrB1tEjQrLRZTNM" name="Page-1">
     <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="XZHTAj7hTFUVzGtnX0nZ-1" value="主机" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="120" y="260" width="70" height="370" as="geometry" />
+          <mxGeometry x="120" y="160" width="70" height="470" as="geometry" />
         </mxCell>
         <mxCell id="XZHTAj7hTFUVzGtnX0nZ-3" value="1号摄像头" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="370" y="340" width="120" height="60" as="geometry" />
@@ -22,7 +22,7 @@
         <mxCell id="XZHTAj7hTFUVzGtnX0nZ-11" value="" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;exitX=1;exitY=0.186;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="XZHTAj7hTFUVzGtnX0nZ-6" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="570" y="480" as="sourcePoint" />
-            <mxPoint x="667" y="459" as="targetPoint" />
+            <mxPoint x="670" y="459" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="XZHTAj7hTFUVzGtnX0nZ-12" value="双绞线" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="XZHTAj7hTFUVzGtnX0nZ-11" vertex="1" connectable="0">
@@ -47,10 +47,10 @@
         <mxCell id="XZHTAj7hTFUVzGtnX0nZ-18" value="双绞线" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="1" vertex="1" connectable="0">
           <mxGeometry x="582.9046201198748" y="589.235365066352" as="geometry" />
         </mxCell>
-        <mxCell id="XZHTAj7hTFUVzGtnX0nZ-19" value="" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.186;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" edge="1">
+        <mxCell id="XZHTAj7hTFUVzGtnX0nZ-19" value="" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;exitX=1;exitY=0.186;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="490" y="529.5" as="sourcePoint" />
-            <mxPoint x="670" y="530.44" as="targetPoint" />
+            <mxPoint x="670" y="530" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="XZHTAj7hTFUVzGtnX0nZ-20" value="双绞线" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="XZHTAj7hTFUVzGtnX0nZ-19" vertex="1" connectable="0">
@@ -58,13 +58,41 @@
             <mxPoint x="-32" y="-26" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="XZHTAj7hTFUVzGtnX0nZ-21" value="" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.186;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" edge="1">
+        <mxCell id="XZHTAj7hTFUVzGtnX0nZ-21" value="" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;exitX=1;exitY=0.186;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="490" y="609.5" as="sourcePoint" />
-            <mxPoint x="670" y="610.44" as="targetPoint" />
+            <mxPoint x="670" y="610" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="XZHTAj7hTFUVzGtnX0nZ-22" value="双绞线" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="XZHTAj7hTFUVzGtnX0nZ-21" vertex="1" connectable="0">
+          <mxGeometry x="0.3895" y="-6" relative="1" as="geometry">
+            <mxPoint x="-32" y="-26" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tWqirmkFoCOq3ggY4I3j-3" value="USB延长线" style="shape=flexArrow;endArrow=classic;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="XZHTAj7hTFUVzGtnX0nZ-4">
+          <mxGeometry x="0.0479" y="-18" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="374" y="290" as="sourcePoint" />
+            <mxPoint x="192" y="290" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tWqirmkFoCOq3ggY4I3j-4" value="USB延长线" style="shape=flexArrow;endArrow=classic;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.999;entryY=0.081;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
+          <mxGeometry x="0.0479" y="-18" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="370.07" y="369.53" as="sourcePoint" />
+            <mxPoint x="190.00000000000006" y="369.5" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tWqirmkFoCOq3ggY4I3j-5" value="显示器" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="170" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tWqirmkFoCOq3ggY4I3j-6" value="" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="190" y="199.57999999999998" as="sourcePoint" />
+            <mxPoint x="370" y="199.57999999999998" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tWqirmkFoCOq3ggY4I3j-7" value="HDMI线" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="tWqirmkFoCOq3ggY4I3j-6">
           <mxGeometry x="0.3895" y="-6" relative="1" as="geometry">
             <mxPoint x="-32" y="-26" as="offset" />
           </mxGeometry>
